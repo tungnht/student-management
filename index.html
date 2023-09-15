@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Quản Lý Sinh Viên</title>
+</head>
+<body onload="renderStudentList()">
+    <div>
+        <h1>Phần mềm quản lý sinh viên</h1>
+    </div>
+    <div class="main-form">
+    <div class="form-student">
+        <h2>Nhập thông tin sinh viên</h3>
+
+        <label for="">Họ và Tên</label>
+        <input type="text" id="fullname">
+        </br>
+        <span id="fullname-error" class="error"></span>
+        </br>
+
+        <label for="">Email</label>
+        <input type="text" id="email">
+        </br>
+        <span id="email-error" class="error"></span>
+        </br>
+
+        <label for="">Số điện thoại</label>
+        <input type="text" id="phonenum">
+        </br>
+        <span id="phone-error" class="error"></span>    
+        </br>
+        
+        <label for="">Địa chỉ</label>
+        <input type="text" id="address">
+        </br>
+        <span id="address-error" class="error" ></span>    
+        </br>
+        
+        <label for="">Giới tính</label>
+        <input type="radio" id="male" name="gender" value="1"/>Nam
+        <input type="radio" id="female" name="gender" value="2"/>Nữ
+        </br>
+        <span id="gender-error" class="error"></span>
+        </br>
+        </br>
+        <button id="save-info" onclick=save()>Lưu thông tin
+        </button>
+    
+
+    </div>
+
+    
+
+    <div class="list-student" id="list-student">
+        <div class="find-student" id="find-student">
+            <input type="text" placeholder="Vui lòng nhập tên sinh viên..." id="student-searching">
+            <button type="submit" id="find-student-button" onclick=findStudent()>Tìm kiếm</button>
+            <button id="rerender-student-button" onclick=renderStudentList() style="background-color: #F1AF00">Tải lại danh sách</button>
+        </div>
+    </br>
+        <h2>Danh sách sinh viên</h3>
+
+        <table id="grid-student" width="800" border="1">
+            
+        </table>
+    </div>
+    </div>
+    <script src='https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)'></script>
+    <script src="./js/student.js"></script>
+    <script src="./js/studentList.js"></script>
+    <script src="./js/maintest.js"></script>
+</body>
+</html>

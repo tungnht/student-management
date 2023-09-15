@@ -1,0 +1,106 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color:#18374D;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+}
+
+div>h1{
+    text-align: center;
+}
+
+div.main-form{
+    display: grid;
+    grid-template-columns: 30% 60%;
+    grid-column-gap: 5%;
+}
+
+div.form-student{
+    width: 100%;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 20px;
+    
+}
+
+h2{
+    margin: 0px;
+    padding-bottom: 10px;
+    
+}
+
+div.form-student>label{
+    width: 100px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+div.form-student>input[type="text"]{
+    width: 300px;
+    padding: 5px;
+}
+
+div.form-student>button{
+    margin-left: 100px;
+    padding: 10px;
+    width: 150px;
+    background-color: #2db50e;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+}
+
+div.list-student{
+    width: 100%;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 20px;
+}
+
+span.error{
+    color: red;
+    font-weight: bold;
+}
+
+.find-student>input {
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    width: 300px;
+  }
+
+.find-student>button{
+    padding: 10px;
+    width: 150px;
+    background-color: #2db50e;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+}
+
+td>button{
+    background-color: #2db50e;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+}
+
+td>button~button{
+    background-color: #b33042;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+}
+
+
+#grid-student{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+tr>th,tr>td{
+    padding: 5px;
+}
